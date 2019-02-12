@@ -1,0 +1,20 @@
+<html>
+<<body>
+    <button onclick="getMyLocation()">Run Geolocation</button>
+    <div id = "result">Resul;t will be displayed here</div>
+    <script>
+        function getMyLocation(){
+            navigator.geolocation.getCurrentPosition(locationSuccess.locationFail);
+        }
+        function locationSuccess(position){
+            var latitude=position.coords.latitude;
+            var longitude=position.coords.longitude;
+            document.getElementById("result").innerHTML="location in latitude and longitude is"+latitude+" and "+longitude;
+        }
+        function locationFail() {
+
+        }
+    </script>
+
+    </body>
+</html>
