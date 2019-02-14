@@ -1,0 +1,46 @@
+<html>
+<head>
+<style type="text/css">
+img{
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    border: 3px solid green;
+
+}
+.float.left {
+    float: left;
+
+}
+
+.float.right{
+    float:right;
+}
+ #outer{
+     margin-top: 100px;
+     margin-left: 40px;
+     width:670px;
+     border: 2px solid red;
+     padding:10px;
+ }
+ #last-element{
+     clear:both;
+ }
+ .clear-fix:before,.clear-fix:after{
+     content: " ";
+     display:table;
+ }
+ .clear-fix:after{
+     clear:both;
+ }
+ </style>
+ </head>
+ <body>
+     <div class="clear-fix">
+         content in outer 
+         <img class = "float.left" src="web_dev/blu.jpg">
+         <img class = "float.right" src="web_dev/blu.jpg">
+     </div>
+     <div class="clear-fix"></div>     
+    
+ </body>

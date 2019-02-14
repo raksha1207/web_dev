@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+ .element {
+   
+            width:300px;
+            height:50px;
+            background-color:whitesmoke;
+            position:relative;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0px 5px 5px 7px orange;
+    
+
+ }
+
+ .dott {outline-style: dotted;
+position:relative;
+margin-top:5%;
+height:300px;
+ 
+ }
+ 
+div.element:nth-child(2n){
+    -ms-transform: rotate(5deg); /* IE 9 */
+  -webkit-transform: rotate(5deg); /* Safari 3-8 */
+  transform: rotate(5deg);
+ 
+}
+ 
+div.element:nth-child(2n+1){
+    -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari 3-8 */
+  transform: rotate(-5deg);
+
+}
+
+#left-box{
+    width: 50px;
+    height: 50px;
+    float:left;
+    margin-left:4%;
+}
+#right-box {
+    width: 50px;
+    height: 50px;
+    margin-left:20%;
+    float:left;
+
+}
+#mid-box{
+    width: 50px;
+    height: 50px;
+    margin-left:20%;
+    float:left;
+}
+#mid2-box{
+    width: 50px;
+    height: 50px;
+    margin-left:20%;
+    float:left;
+}
+.element:hover {
+    box-shadow: 0 5 5px 7px red;
+}
+ </style>
+ <body>
+     <p><div class="element"></div></p>
+     <div class="dott">
+         
+        <div id="left-box">
+         <div class="element">1st block</div>
+         <div class="element">2nd block</div>
+         <div class="element">3rd block</div>
+         <div class="element">4th block</div>
+         <div class="element">5th block</div>
+         </div>
+         <div id="mid-box">
+                <div class="element">1st block</div>
+                <div class="element">2nd block</div>
+                <div class="element">3rd block</div>
+                <div class="element">4th block</div>
+                <div class="element">5th block</div>
+                </div>
+        <div id="mid2-box">
+                        <div class="element">1st block</div>
+                        <div class="element">2nd block</div>
+                        <div class="element">3rd block</div>
+                        <div class="element">4th block</div>
+                        <div class="element">5th block</div>
+                                    </div>
+        <div id="right-box">
+                                            <div class="element">1st block</div>
+                                            <div class="element">2nd block</div>
+                                            <div class="element">3rd block</div>
+                                            <div class="element">4th block</div>
+                                            <div class="element">5th block</div>
+                                                                </div>
+                
+     </p>
+ </body>
