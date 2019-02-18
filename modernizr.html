@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script>
+     
+        window.onload=function() {
+            var form =document.forms[0],inputs =form.elements;
+            if(!Modernizr.input.autofocus){
+                alert("support not enabled");
+                inputs[0].focus();
+            }
+            else{
+                alert("support enabled");
+            }
+        };
+        </script>
+        <style>
+            input{
+                padding:2px;
+                margin:10px;
+                display:block;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form method = "post">
+            <input autofocus type = "text" name ="firstname">
+            <input type = "number" name ="age">
+            <input type ="submit" value="submit">
+        </form>
+    </body>
+</html>

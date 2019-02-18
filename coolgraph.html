@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <canvas width="500" height="300" id="canvas"></canvas>
+        <script>var canvas=document.getElementById('canvas');
+        var c=canvas.getContext('2d');
+        c.fillStyle= '#8A2BE2F';
+        c.beginPath();
+        c.moveTo(30,20);
+        c.lineTo(200,50);
+        c.lineTo(126,90);
+        c.closePath();
+        c.fill();
+        c.strokeStyle='rgb(0,128,0)';
+        c.lineWidth=5;
+        c.stroke();
+        var ctx=document.getElementById('canvas').getContext('2d');
+        ctx.fillStyle="black";
+        ctx.font="bold "+26+"pt Arial";
+        ctx.fillText("i miss the childhood Days",20,150);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5sm
+            XKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>
+            <style>
+            h1, h2, div{
+                border: 1px solid green;
+               
+            }
+            .bs-example div[class^="col"] {
+                border: 1px solid white;
+                background: #f5f5f5;
+                text-align: center;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+                
+                </style>
+        
+</head>
+<body>
+    <div class="container-fluid"> <!-- use container fluid to check the difference-->
+        <div class="row">
+            <div class="col-md"> FIRST COLUMN</div>
+            <div class="col-md"> SECOND COLUMN</div>
+            <div class="col-md"> THIRD COLUMN</div>
+            <div class="col-md"> FOURTH COLUMN</div>
+            <div class="col-md"> FIFTH COLUMN</div>
+            <div class="col-md"> SIXTH COLUMN</div>
+
+        </div>
+        <div class="row">
+                <div class="col-md"> FIRST COLUMN</div>
+                <div class="col-md"> SECOND COLUMN</div>
+                <div class="col-md"> THIRD COLUMN</div>
+                <div class="col-md"> FOURTH COLUMN</div>
+                <div class="col-md"> FIFTH COLUMN</div>
+                <div class="col-md"> SIXTH COLUMN</div>
+                <div class="col-md"> FIRST COLUMN</div>
+                <div class="col-md"> SECOND COLUMN</div>
+                <div class="col-md"> THIRD COLUMN</div>
+                <div class="col-md"> FOURTH COLUMN</div>
+                <div class="col-md"> FIFTH COLUMN</div>
+                <div class="col-md"> SIXTH COLUMN</div>
+            </div>
+        <div class="col-md-12">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            row1 col1 
+             this is the left side column for media devices lets see what the news is for today
+        </div>
+        <div class="col-md-6 col-sm-12">
+                row1 col2
+                 this is the left side column for media devices lets see what the news is for today
+            </div>
+    </div>
+    <br/>
+
+    <div class="bs-example">
+        <div class="row"><!-- use of screen size alignment according to the number of pixels sm, md,lg,xl 1/12 divisions t
+        taken for sm (1,6 column for sm 6 for md 4 for large and 3 for xl ) -->
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"> FIRST COLUMN</div>
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"> SECOND COLUMN</div>
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"> THIRD COLUMN</div>
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"> FOURTH COLUMN</div>
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"> FIFTH COLUMN</div>
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"> SIXTH COLUMN</div>
+        </div>
+    </div>
+<br/>
+<br/>
+ <!-- non uniform look and feel in different browsers-->
+<select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <!--uniform look and feel in all browsers-->
+<div class="row">
+    <div class="col-xl-4">4 column width label</div>
+    <input type="text" class="form-control  col-xl-3"/> <!--"form-control" is a bootstrap class which highlights the input field blue-->
+</div>
+
+</body>
+</html>
